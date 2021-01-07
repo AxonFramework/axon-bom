@@ -18,6 +18,7 @@
         <extension.mongo.version>4.4</extension.mongo.version>
         <extension.reactor.version>4.4.2</extension.reactor.version>
         <extension.tracing.version>4.4</extension.tracing.version>
+        <extension.springcloud.version>4.3.1</extension.springcloud.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -167,6 +168,21 @@
                 <version>${extension.reactor.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.axonframework.extensions.springcloud</groupId>
+                <artifactId>axon-springcloud</artifactId>
+                <version>${extension.springcloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.springcloud</groupId>
+                <artifactId>axon-springcloud-spring-boot-autoconfigure</artifactId>
+                <version>${extension.springcloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.springcloud</groupId>
+                <artifactId>axon-springcloud-spring-boot-starter</artifactId>
+                <version>${extension.springcloud.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.axonframework.extensions.tracing</groupId>
                 <artifactId>axon-tracing</artifactId>
                 <version>${extension.tracing.version}</version>
@@ -195,6 +211,7 @@
                         <phase>validate</phase>
                         <configuration>
                             <inplace>true</inplace>
+                            <replaceBackup>true</replaceBackup>
                         </configuration>
                         <goals>
                             <goal>resolve</goal>
