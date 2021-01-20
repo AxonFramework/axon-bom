@@ -1,4 +1,4 @@
-name: Axon Framework
+name: Axon Bill Of Material (BOM) build and deploy
 
 on:
   push:
