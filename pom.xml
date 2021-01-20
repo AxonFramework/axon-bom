@@ -253,4 +253,52 @@
             </plugin>
         </plugins>
     </build>
+    <scm>
+        <connection>scm:git:git://github.com/AxonFramework/AxonFramework.git</connection>
+        <developerConnection>scm:git:git@github.com:AxonFramework/AxonFramework.git</developerConnection>
+        <url>https://github.com/AxonFramework/AxonFramework</url>
+        <tag>HEAD</tag>
+    </scm>
+    <developers>
+        <developer>
+            <name>Allard Buijze</name>
+            <email>allard.buijze@axoniq.io</email>
+            <organization>AxonIQ</organization>
+            <organizationUrl>https://axoniq.io</organizationUrl>
+            <roles>
+                <role>Project Owner</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Steven van Beelen</name>
+            <email>steven.vanbeelen@axoniq.io</email>
+            <organization>AxonIQ</organization>
+            <organizationUrl>https://axoniq.io</organizationUrl>
+            <roles>
+                <role>Committer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Milen Dyankov</name>
+            <email>milen.dyankov@axoniq.io</email>
+            <organization>AxonIQ</organization>
+            <organizationUrl>https://axoniq.io</organizationUrl>
+            <roles>
+                <role>Committer</role>
+            </roles>
+        </developer>
+    </developers>
+    <!-- deploy and release configuration -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
 </project>
