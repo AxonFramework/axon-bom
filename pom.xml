@@ -18,12 +18,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.axoniq</groupId>
     <artifactId>axon-bom</artifactId>
-    <version>4.4.5</version>
+    <version>4.5-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Axon Bill of Material</name>
     <description>This project provides Maven managed dependencies for all Axon artifacts.</description>
     <properties>
-        <axon.version>4.4.5</axon.version>
+        <axon.version>4.5-SNAPSHOT</axon.version>
         <extension.default.version>4.4</extension.default.version>
         <extension.amqp.version>4.4</extension.amqp.version>
         <extension.cdi.version>4.1-alpha1</extension.cdi.version>
@@ -214,6 +214,17 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <repositories>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
