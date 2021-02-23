@@ -24,16 +24,15 @@
     <description>This project provides Maven managed dependencies for all Axon artifacts.</description>
     <properties>
         <axon.version>4.5-SNAPSHOT</axon.version>
-        <extension.default.version>4.4</extension.default.version>
-        <extension.amqp.version>4.4</extension.amqp.version>
-        <extension.cdi.version>4.1-alpha1</extension.cdi.version>
-        <extension.jgroups.version>4.4</extension.jgroups.version>
-        <extension.kafka.version>4.0-RC3</extension.kafka.version>
-        <extension.kotlin.version>0.1.0</extension.kotlin.version>
-        <extension.mongo.version>4.4</extension.mongo.version>
-        <extension.reactor.version>4.4.2</extension.reactor.version>
-        <extension.tracing.version>4.4</extension.tracing.version>
-        <extension.springcloud.version>4.3.1</extension.springcloud.version>
+        <extension.amqp.version>4.5-SNAPSHOT</extension.amqp.version>
+        <extension.cdi.version>4.5-SNAPSHOT</extension.cdi.version>
+        <extension.jgroups.version>4.5-SNAPSHOT</extension.jgroups.version>
+        <extension.kafka.version>4.0-SNAPSHOT</extension.kafka.version>
+        <extension.kotlin.version>0.2.0-SNAPSHOT</extension.kotlin.version>
+        <extension.mongo.version>4.5-SNAPSHOT</extension.mongo.version>
+        <extension.reactor.version>4.5-SNAPSHOT</extension.reactor.version>
+        <extension.tracing.version>4.5-SNAPSHOT</extension.tracing.version>
+        <extension.springcloud.version>4.5-SNAPSHOT</extension.springcloud.version>
     </properties>
     <dependencyManagement>
         <dependencies>
