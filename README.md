@@ -11,7 +11,7 @@ Import the BOM in your project:
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.axoniq</groupId>
+                <groupId>org.axonframework</groupId>
                 <artifactId>axon-bom</artifactId>
                 <version>${version.axon}</version>
                 <type>pom</type>
@@ -73,7 +73,7 @@ Import the Axon BOM:
 ```groovy
 dependencyManagement {
   imports {
-    mavenBom 'io.axoniq:axon-bom:<VERSION>'
+    mavenBom 'org.axonframework:axon-bom:<VERSION>'
   }
 }
 ```
