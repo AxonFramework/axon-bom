@@ -267,9 +267,9 @@
         </plugins>
     </build>
     <scm>
-        <connection>scm:git:git://github.com/AxonFramework/AxonFramework.git</connection>
-        <developerConnection>scm:git:git@github.com:AxonFramework/AxonFramework.git</developerConnection>
-        <url>https://github.com/AxonFramework/AxonFramework</url>
+        <connection>scm:git:git://github.com/AxonFramework/axon-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:AxonFramework/axon-bom.git</developerConnection>
+        <url>https://github.com/AxonFramework/axon-bom</url>
         <tag>HEAD</tag>
     </scm>
     <developers>
