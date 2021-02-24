@@ -1,4 +1,6 @@
 # Axon Bill of Material
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.axonframework/axon-bom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.axonframework/axon-bom)
+![Build Status](https://github.com/AxonFramework/axon-bom/actions/workflows/maven.yml/badge.svg?branch=master)
 
 This project provides Maven managed dependencies for all Axon artifacts.
 
