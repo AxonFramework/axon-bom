@@ -22,7 +22,7 @@
     <version>4.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Axon Bill of Material</name>
+    <name>Axon Bill of Materials</name>
     <description>This project provides Maven managed dependencies for all Axon artifacts.</description>
 
     <properties>

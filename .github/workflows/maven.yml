@@ -1,4 +1,4 @@
-name: Axon Bill Of Material (BOM) build and deploy
+name: Axon Bill Of Materials (BOM) build and deploy
 
 on:
   push:
