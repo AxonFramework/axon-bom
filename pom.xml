@@ -26,7 +26,7 @@
     <description>This project provides Maven managed dependencies for all Axon artifacts.</description>
 
     <properties>
-        <axon.version>4.5-SNAPSHOT</axon.version>
+        <axon.version>4.5</axon.version>
         <extension.amqp.version>4.5-SNAPSHOT</extension.amqp.version>
         <extension.cdi.version>4.5-SNAPSHOT</extension.cdi.version>
         <extension.jgroups.version>4.5-SNAPSHOT</extension.jgroups.version>
