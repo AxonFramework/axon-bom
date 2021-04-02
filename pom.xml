@@ -14,19 +14,37 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>org.axonframework</groupId>
     <artifactId>axon-bom</artifactId>
     <version>4.5-SNAPSHOT</version>
+
     <packaging>pom</packaging>
+
+    <modelVersion>4.0.0</modelVersion>
 
     <name>Axon Bill of Materials</name>
     <description>This project provides Maven managed dependencies for all Axon artifacts.</description>
 
+    <inceptionYear>2020</inceptionYear>
+    <url>https://axoniq.io/</url>
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/AxonFramework/axon-bom/issues</url>
+    </issueManagement>
+
     <properties>
         <axon.version>4.5</axon.version>
+        <axonserver-connector-java.version>4.5</axonserver-connector-java.version>
         <extension.amqp.version>4.5-SNAPSHOT</extension.amqp.version>
         <extension.cdi.version>4.5-SNAPSHOT</extension.cdi.version>
         <extension.jgroups.version>4.5-SNAPSHOT</extension.jgroups.version>
@@ -37,11 +55,13 @@
         <extension.tracing.version>4.5-SNAPSHOT</extension.tracing.version>
         <extension.springcloud.version>4.5-SNAPSHOT</extension.springcloud.version>
     </properties>
+
     <dependencyManagement>
         <dependencies>
+            <!-- Framework -->
             <dependency>
-                <groupId>io.axoniq</groupId>
-                <artifactId>axonserver-connector-java</artifactId>
+                <groupId>org.axonframework</groupId>
+                <artifactId>axon-server-connector</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <dependency>
@@ -86,11 +106,6 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-server-connector</artifactId>
-                <version>${axon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.axonframework</groupId>
                 <artifactId>axon-spring</artifactId>
                 <version>${axon.version}</version>
             </dependency>
@@ -109,6 +124,13 @@
                 <artifactId>axon-test</artifactId>
                 <version>${axon.version}</version>
             </dependency>
+            <!-- AxonServer Connector -->
+            <dependency>
+                <groupId>io.axoniq</groupId>
+                <artifactId>axonserver-connector-java</artifactId>
+                <version>${axonserver-connector-java.version}</version>
+            </dependency>
+            <!-- Extension - AMQP -->
             <dependency>
                 <groupId>org.axonframework.extensions.amqp</groupId>
                 <artifactId>axon-amqp</artifactId>
@@ -124,11 +146,13 @@
                 <artifactId>axon-amqp-spring-boot-starter</artifactId>
                 <version>${extension.amqp.version}</version>
             </dependency>
+            <!-- Extension - CDI -->
             <dependency>
                 <groupId>org.axonframework.extensions.cdi</groupId>
                 <artifactId>axon-cdi</artifactId>
                 <version>${extension.cdi.version}</version>
             </dependency>
+            <!-- Extension - JGroups -->
             <dependency>
                 <groupId>org.axonframework.extensions.jgroups</groupId>
                 <artifactId>axon-jgroups</artifactId>
@@ -144,6 +168,7 @@
                 <artifactId>axon-jgroups-spring-boot-starter</artifactId>
                 <version>${extension.jgroups.version}</version>
             </dependency>
+            <!-- Extension - Kafka -->
             <dependency>
                 <groupId>org.axonframework.extensions.kafka</groupId>
                 <artifactId>axon-kafka</artifactId>
@@ -159,16 +184,19 @@
                 <artifactId>axon-kafka-spring-boot-starter</artifactId>
                 <version>${extension.kafka.version}</version>
             </dependency>
+            <!-- Extension - Kotlin -->
             <dependency>
                 <groupId>org.axonframework.extensions.kotlin</groupId>
                 <artifactId>axon-kotlin</artifactId>
                 <version>${extension.kotlin.version}</version>
             </dependency>
+            <!-- Extension - Mongo -->
             <dependency>
                 <groupId>org.axonframework.extensions.mongo</groupId>
                 <artifactId>axon-mongo</artifactId>
                 <version>${extension.mongo.version}</version>
             </dependency>
+            <!-- Extension - Reactor -->
             <dependency>
                 <groupId>org.axonframework.extensions.reactor</groupId>
                 <artifactId>axon-reactor</artifactId>
@@ -184,6 +212,7 @@
                 <artifactId>axon-reactor-spring-boot-starter</artifactId>
                 <version>${extension.reactor.version}</version>
             </dependency>
+            <!-- Extension - Spring Cloud -->
             <dependency>
                 <groupId>org.axonframework.extensions.springcloud</groupId>
                 <artifactId>axon-springcloud</artifactId>
@@ -199,6 +228,7 @@
                 <artifactId>axon-springcloud-spring-boot-starter</artifactId>
                 <version>${extension.springcloud.version}</version>
             </dependency>
+            <!-- Extension - Tracing -->
             <dependency>
                 <groupId>org.axonframework.extensions.tracing</groupId>
                 <artifactId>axon-tracing</artifactId>
@@ -216,6 +246,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <repositories>
         <repository>
             <id>sonatype</id>
@@ -227,6 +258,7 @@
             </snapshots>
         </repository>
     </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -248,6 +280,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>au.com.acegi</groupId>
                 <artifactId>xml-format-maven-plugin</artifactId>
@@ -266,12 +299,27 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- Deploy and release configuration -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
     <scm>
         <connection>scm:git:git://github.com/AxonFramework/axon-bom.git</connection>
         <developerConnection>scm:git:git@github.com:AxonFramework/axon-bom.git</developerConnection>
         <url>https://github.com/AxonFramework/axon-bom</url>
         <tag>HEAD</tag>
     </scm>
+
     <developers>
         <developer>
             <name>Allard Buijze</name>
@@ -301,17 +349,4 @@
             </roles>
         </developer>
     </developers>
-    <!-- deploy and release configuration -->
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <uniqueVersion>true</uniqueVersion>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-            <uniqueVersion>false</uniqueVersion>
-        </repository>
-    </distributionManagement>
 </project>
