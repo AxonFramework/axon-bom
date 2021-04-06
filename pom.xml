@@ -52,7 +52,7 @@
         <extension.kotlin.version>0.2.0-SNAPSHOT</extension.kotlin.version>
         <extension.mongo.version>4.5-SNAPSHOT</extension.mongo.version>
         <extension.reactor.version>4.5-SNAPSHOT</extension.reactor.version>
-        <extension.tracing.version>4.5-SNAPSHOT</extension.tracing.version>
+        <extension.tracing.version>4.5</extension.tracing.version>
         <extension.springcloud.version>4.5-SNAPSHOT</extension.springcloud.version>
     </properties>
 
