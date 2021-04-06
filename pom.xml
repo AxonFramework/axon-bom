@@ -48,12 +48,12 @@
         <extension.amqp.version>4.5</extension.amqp.version>
         <extension.cdi.version>4.5-SNAPSHOT</extension.cdi.version>
         <extension.jgroups.version>4.5</extension.jgroups.version>
-        <extension.kafka.version>4.0-SNAPSHOT</extension.kafka.version>
+        <extension.kafka.version>4.0-RC3</extension.kafka.version>
         <extension.kotlin.version>0.2.0-SNAPSHOT</extension.kotlin.version>
         <extension.mongo.version>4.5-SNAPSHOT</extension.mongo.version>
         <extension.reactor.version>4.5-SNAPSHOT</extension.reactor.version>
+        <extension.springcloud.version>4.4</extension.springcloud.version>
         <extension.tracing.version>4.5</extension.tracing.version>
-        <extension.springcloud.version>4.5-SNAPSHOT</extension.springcloud.version>
     </properties>
 
     <dependencyManagement>
