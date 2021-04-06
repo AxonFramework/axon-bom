@@ -280,23 +280,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>au.com.acegi</groupId>
-                <artifactId>xml-format-maven-plugin</artifactId>
-                <version>3.1.2</version>
-                <executions>
-                    <execution>
-                        <id>xml-format</id>
-                        <goals>
-                            <goal>xml-format</goal>
-                        </goals>
-                        <configuration>
-                            <indentSize>4</indentSize>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
