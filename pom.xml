@@ -45,7 +45,7 @@
     <properties>
         <axon.version>4.5</axon.version>
         <axonserver-connector-java.version>4.5</axonserver-connector-java.version>
-        <extension.amqp.version>4.5-SNAPSHOT</extension.amqp.version>
+        <extension.amqp.version>4.5</extension.amqp.version>
         <extension.cdi.version>4.5-SNAPSHOT</extension.cdi.version>
         <extension.jgroups.version>4.5</extension.jgroups.version>
         <extension.kafka.version>4.0-SNAPSHOT</extension.kafka.version>
