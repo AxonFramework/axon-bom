@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Copyright (c) 2010-2021. Axon Framework
   ~
@@ -14,9 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>org.axonframework</groupId>
     <artifactId>axon-bom</artifactId>
@@ -43,8 +40,8 @@
     </issueManagement>
 
     <properties>
-        <axon.version>4.5</axon.version>
         <axonserver-connector-java.version>4.5</axonserver-connector-java.version>
+        <axon.version>4.5</axon.version>
         <extension.amqp.version>4.5</extension.amqp.version>
         <extension.cdi.version>4.5-SNAPSHOT</extension.cdi.version>
         <extension.jgroups.version>4.5</extension.jgroups.version>
@@ -58,12 +55,13 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Framework -->
+            <!-- Axon Server Connector -->
             <dependency>
-                <groupId>org.axonframework</groupId>
-                <artifactId>axon-server-connector</artifactId>
-                <version>${axon.version}</version>
+                <groupId>io.axoniq</groupId>
+                <artifactId>axonserver-connector-java</artifactId>
+                <version>${axonserver-connector-java.version}</version>
             </dependency>
+            <!-- Axon Framework -->
             <dependency>
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-configuration</artifactId>
@@ -106,6 +104,11 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
+                <artifactId>axon-server-connector</artifactId>
+                <version>${axon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework</groupId>
                 <artifactId>axon-spring</artifactId>
                 <version>${axon.version}</version>
             </dependency>
@@ -123,12 +126,6 @@
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-test</artifactId>
                 <version>${axon.version}</version>
-            </dependency>
-            <!-- AxonServer Connector -->
-            <dependency>
-                <groupId>io.axoniq</groupId>
-                <artifactId>axonserver-connector-java</artifactId>
-                <version>${axonserver-connector-java.version}</version>
             </dependency>
             <!-- Extension - AMQP -->
             <dependency>
