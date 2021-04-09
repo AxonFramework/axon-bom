@@ -17,7 +17,7 @@
 
     <groupId>org.axonframework</groupId>
     <artifactId>axon-bom</artifactId>
-    <version>4.5.0-SNAPSHOT</version>
+    <version>4.5.0</version>
 
     <packaging>pom</packaging>
 
@@ -355,7 +355,7 @@
         <connection>scm:git:git://github.com/AxonFramework/axon-bom.git</connection>
         <developerConnection>scm:git:git@github.com:AxonFramework/axon-bom.git</developerConnection>
         <url>https://github.com/AxonFramework/axon-bom</url>
-        <tag>HEAD</tag>
+        <tag>axon-bom-4.5.0</tag>
     </scm>
 
     <developers>
