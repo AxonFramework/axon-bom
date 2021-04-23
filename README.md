@@ -70,7 +70,7 @@ Then add the dependencies you need without specifying the version:
 
 ## Getting Started - Gradle
 
-For usage with [Gradle](https://gradle.org/), apply the `dependency-management-plugin` plugin like so:
+For usage with **[Gradle](https://gradle.org/) up to version 4.x**, apply the `dependency-management-plugin` plugin like so:
 
 ```groovy
 buildscript {
@@ -105,6 +105,12 @@ dependencies {
     compile 'org.axonframework.extensions.mongo:axon-mongo'
     ...
 }
+```
+
+Beginning with **[Gradle version 5.0](https://docs.gradle.org/5.0/userguide/managing_transitive_dependencies.html#sec:bom_import)**, you can also omit the dependency-management plugin and instead use the `platform` dependency dsl to import maven boms:
+
+```
+implementation(platform("org.axonframework:axon-bom:<VERSION>"))
 ```
 
 ## Receiving help
