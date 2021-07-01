@@ -5,6 +5,10 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 5
+  labels:
+    - "Type: Dependency Upgrade"
+    - "Priority 1: Must"
+    - "Status: In Progress"
   reviewers:
     - "azzazzel"
     - "smcvb"
