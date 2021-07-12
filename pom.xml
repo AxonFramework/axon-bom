@@ -51,6 +51,7 @@
         <extension.reactor.version>4.5</extension.reactor.version>
         <extension.springcloud.version>4.4</extension.springcloud.version>
         <extension.tracing.version>4.5</extension.tracing.version>
+        <axonserver-plugin-api.version>4.5</axonserver-plugin-api.version>
     </properties>
 
     <dependencyManagement>
@@ -240,6 +241,12 @@
                 <groupId>org.axonframework.extensions.tracing</groupId>
                 <artifactId>axon-tracing-spring-boot-starter</artifactId>
                 <version>${extension.tracing.version}</version>
+            </dependency>
+            <!-- Axon Server - Plugins -->
+            <dependency>
+                <groupId>io.axoniq</groupId>
+                <artifactId>axonserver-plugin-api</artifactId>
+                <version>${axonserver-plugin-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
