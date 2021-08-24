@@ -22,7 +22,7 @@ updates:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
     - "Status: In Progress"
-  milestone: 4
+  milestone: 6
   reviewers:
     - "azzazzel"
     - "smcvb"
