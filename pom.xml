@@ -40,7 +40,7 @@
 
     <properties>
         <axonserver-connector-java.version>4.5.2</axonserver-connector-java.version>
-        <axon.version>4.5.3</axon.version>
+        <axon.version>4.5.4</axon.version>
         <extension.amqp.version>4.5</extension.amqp.version>
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
         <extension.jgroups.version>4.5</extension.jgroups.version>
