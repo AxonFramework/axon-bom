@@ -47,7 +47,7 @@
         <extension.jgroups.version>4.5</extension.jgroups.version>
         <extension.kafka.version>4.5</extension.kafka.version>
         <extension.kotlin.version>0.2.0</extension.kotlin.version>
-        <extension.mongo.version>4.4</extension.mongo.version>
+        <extension.mongo.version>4.5</extension.mongo.version>
         <extension.reactor.version>4.5</extension.reactor.version>
         <extension.springcloud.version>4.4</extension.springcloud.version>
         <extension.tracing.version>4.5</extension.tracing.version>
