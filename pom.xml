@@ -52,7 +52,7 @@
         <extension.mongo.version>4.5</extension.mongo.version>
         <extension.reactor.version>4.5</extension.reactor.version>
         <extension.springcloud.version>4.4</extension.springcloud.version>
-        <extension.tracing.version>4.5</extension.tracing.version>
+        <extension.tracing.version>4.5.1</extension.tracing.version>
         <axonserver-plugin-api.version>4.5</axonserver-plugin-api.version>
     </properties>
 
