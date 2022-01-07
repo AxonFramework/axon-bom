@@ -3,15 +3,15 @@ name: Axon Bill Of Materials
 on:
   push:
     branches:
+      - main
       - master
       - axon-bom-*.*.x
-  pull_request:
 
 jobs:
   build:
     name: Test and Build
-
     runs-on: ubuntu-latest
+    continue-on-error: true # do not fail the whole job if one of the steps fails
 
     steps:
       - name: Checkout code
@@ -34,16 +34,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven
 
-
       - name: Build
         run: |
-          mvn -B -U verify -DskipTests=true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+          ./mvnw -B -U verify -DskipTests=true
+
       - name: Deploy to Sonatype
-        # The github.repository validation ensures this job is not invoked for forked branches, since those don't have access to the secrets.
-        if: ${{ success() && github.event.pull_request.head.repo.full_name == github.repository }}
+        if: success()
         run: |
           mvn -B -U deploy -DskipTests=true
         env:
