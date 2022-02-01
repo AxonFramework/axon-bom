@@ -47,7 +47,7 @@
         <extension.amqp.version>4.5</extension.amqp.version>
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
         <extension.jgroups.version>4.5.1</extension.jgroups.version>
-        <extension.kafka.version>4.5.2</extension.kafka.version>
+        <extension.kafka.version>4.5.3</extension.kafka.version>
         <extension.kotlin.version>0.2.0</extension.kotlin.version>
         <extension.mongo.version>4.5</extension.mongo.version>
         <extension.reactor.version>4.5.1</extension.reactor.version>
