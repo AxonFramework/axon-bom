@@ -54,11 +54,13 @@
         <extension.springcloud.version>4.5</extension.springcloud.version>
         <extension.tracing.version>4.5.2</extension.tracing.version>
         <axonserver-plugin-api.version>4.5</axonserver-plugin-api.version>
+
+        <projectreactor.version>3.4.14</projectreactor.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-        
+
             <!-- Axon Server Connector -->
             <dependency>
                 <groupId>io.axoniq</groupId>
@@ -218,6 +220,12 @@
                 <groupId>org.axonframework.extensions.reactor</groupId>
                 <artifactId>axon-reactor-spring-boot-starter</artifactId>
                 <version>${extension.reactor.version}</version>
+            </dependency>
+            <!-- Project reactor - Included to avoid compatability issues when updating from older Axon versions -->
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>${projectreactor.version}</version>
             </dependency>
             <!-- Extension - Spring Cloud -->
             <dependency>
