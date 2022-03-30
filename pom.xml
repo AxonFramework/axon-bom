@@ -12,13 +12,11 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  -->
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>org.axonframework</groupId>
     <artifactId>axon-bom</artifactId>
-    <version>4.5.12-SNAPSHOT</version>
+    <version>4.5.12</version>
 
     <packaging>pom</packaging>
 
@@ -60,6 +58,7 @@
 
     <dependencyManagement>
         <dependencies>
+        
 
             <!-- Axon Server Connector -->
             <dependency>
@@ -72,6 +71,12 @@
                 <groupId>io.axoniq</groupId>
                 <artifactId>axonserver-plugin-api</artifactId>
                 <version>${axonserver-plugin-api.version}</version>
+            </dependency>
+            <!-- Project reactor - Included to avoid compatability issues when updating from older Axon versions -->
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>${projectreactor.version}</version>
             </dependency>
             <!-- Axon Framework -->
             <dependency>
@@ -221,12 +226,6 @@
                 <artifactId>axon-reactor-spring-boot-starter</artifactId>
                 <version>${extension.reactor.version}</version>
             </dependency>
-            <!-- Project reactor - Included to avoid compatability issues when updating from older Axon versions -->
-            <dependency>
-                <groupId>io.projectreactor</groupId>
-                <artifactId>reactor-core</artifactId>
-                <version>${projectreactor.version}</version>
-            </dependency>
             <!-- Extension - Spring Cloud -->
             <dependency>
                 <groupId>org.axonframework.extensions.springcloud</groupId>
@@ -373,7 +372,7 @@
         <connection>scm:git:git://github.com/AxonFramework/axon-bom.git</connection>
         <developerConnection>scm:git:git@github.com:AxonFramework/axon-bom.git</developerConnection>
         <url>https://github.com/AxonFramework/axon-bom</url>
-        <tag>HEAD</tag>
+        <tag>axon-4.5.12</tag>
     </scm>
 
     <developers>
