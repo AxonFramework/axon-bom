@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2010-2021. Axon Framework
+  ~ Copyright (c) 2010-2022. Axon Framework
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@
 
     <properties>
         <axonserver-connector-java.version>4.5.4</axonserver-connector-java.version>
-        <axon.version>4.5.8</axon.version>
+        <axon.version>4.5.9</axon.version>
 
         <extension.amqp.version>4.5</extension.amqp.version>
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
