@@ -12,7 +12,11 @@ updates:
   milestone: 14
   reviewers:
     - "azzazzel"
-    - "smcvb"
+    - "gklijs"
+    - "Morlack"
+    - "sandjelkovic"
+    - "smcvb" # Main
+    - "YvonneCeelie"
 - package-ecosystem: maven
   directory: "/"
   schedule:
@@ -25,4 +29,8 @@ updates:
   milestone: 15
   reviewers:
     - "azzazzel"
-    - "smcvb"
+    - "gklijs"
+    - "Morlack"
+    - "sandjelkovic"
+    - "smcvb" # Main
+    - "YvonneCeelie"
