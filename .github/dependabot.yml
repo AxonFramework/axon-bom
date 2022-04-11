@@ -11,12 +11,8 @@ updates:
     - "Status: In Progress"
   milestone: 14
   reviewers:
-    - "azzazzel"
-    - "gklijs"
-    - "Morlack"
-    - "sandjelkovic"
     - "smcvb" # Main
-    - "YvonneCeelie"
+    - "azzazzel"
 - package-ecosystem: maven
   directory: "/"
   schedule:
@@ -28,9 +24,5 @@ updates:
     - "Status: In Progress"
   milestone: 15
   reviewers:
-    - "azzazzel"
-    - "gklijs"
-    - "Morlack"
-    - "sandjelkovic"
     - "smcvb" # Main
-    - "YvonneCeelie"
+    - "azzazzel"
