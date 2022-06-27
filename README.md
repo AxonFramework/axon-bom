@@ -18,6 +18,8 @@ At this stage, the BOM includes the dependencies for the following projects:
 * [Axon Framework Spring Cloud Extension](https://github.com/AxonFramework/extension-springcloud)
 * [Axon Framework Tracing Extension](https://github.com/AxonFramework/extension-tracing)
 
+The Bill of Materials always follows at least the Axon Framework release cycle. So every new Axon Framework version will lead to a new Bill of Materials version. Releases of other dependencies may or may not lead to a new release.
+
 ## Getting Started - Maven
 
 For usage with [Maven](https://maven.apache.org/), import the BOM in your project like so:
