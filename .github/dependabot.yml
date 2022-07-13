@@ -9,7 +9,7 @@ updates:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
     - "Status: In Progress"
-  milestone: 14
+  milestone: 8
   reviewers:
     - "smcvb" # Main
     - "azzazzel"
@@ -22,7 +22,7 @@ updates:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
     - "Status: In Progress"
-  milestone: 17
+  milestone: 8
   reviewers:
     - "smcvb" # Main
     - "azzazzel"
