@@ -55,7 +55,7 @@
         <extension.tracing.version>4.5.2</extension.tracing.version>
         <axonserver-plugin-api.version>4.5</axonserver-plugin-api.version>
 
-        <projectreactor.version>3.4.21</projectreactor.version>
+        <projectreactor.version>3.4.23</projectreactor.version>
     </properties>
 
     <dependencyManagement>
@@ -284,7 +284,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.0.1</version>
                 </plugin>
             </plugins>
         </pluginManagement>
