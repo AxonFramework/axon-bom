@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up JDK 8
-        uses: actions/setup-java@v3.4.1
+        uses: actions/setup-java@v3.5.0
         with:
           distribution: 'zulu'
           java-version: 8
@@ -29,12 +29,12 @@ jobs:
 
       - name: Build
         run: |
-          ./mvnw -B -U verify -DskipTests=true
+          ./mvnw -B -U -Dstyle.color=always verify -DskipTests=true
 
       - name: Deploy to Sonatype
         if: success()
         run: |
-          mvn -B -U deploy -DskipTests=true
+          mvn -B -U -Dstyle.color=always deploy -DskipTests=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAVEN_USERNAME: ${{ secrets.SONATYPE_TOKEN_ID }}
