@@ -43,6 +43,7 @@
     <properties>
         <axonserver-connector-java.version>4.6.1</axonserver-connector-java.version>
         <axon.version>4.6.0</axon.version>
+        <axonserver-plugin-api.version>4.6.0</axonserver-plugin-api.version>
 
         <extension.amqp.version>4.6.0</extension.amqp.version>
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
@@ -50,10 +51,11 @@
         <extension.kafka.version>4.6.0</extension.kafka.version>
         <extension.kotlin.version>4.6.0</extension.kotlin.version>
         <extension.mongo.version>4.6.0</extension.mongo.version>
+        <extension.multitenancy.version>4.6.0</extension.multitenancy.version>
         <extension.reactor.version>4.6.0</extension.reactor.version>
+        <extension.spring-native.version>0.1.0</extension.spring-native.version>
         <extension.springcloud.version>4.6.0</extension.springcloud.version>
         <extension.tracing.version>4.6.0</extension.tracing.version>
-        <axonserver-plugin-api.version>4.6.0</axonserver-plugin-api.version>
 
         <projectreactor.version>3.4.23</projectreactor.version>
     </properties>
@@ -61,7 +63,6 @@
     <dependencyManagement>
         <dependencies>
         
-
             <!-- Axon Server Connector -->
             <dependency>
                 <groupId>io.axoniq</groupId>
@@ -74,12 +75,14 @@
                 <artifactId>axonserver-plugin-api</artifactId>
                 <version>${axonserver-plugin-api.version}</version>
             </dependency>
-            <!-- Project reactor - Included to avoid compatability issues when updating from older Axon versions -->
+
+            <!-- Project Reactor - Included to avoid compatability issues when updating from older Axon versions -->
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
                 <version>${projectreactor.version}</version>
             </dependency>
+
             <!-- Axon Framework -->
             <dependency>
                 <groupId>org.axonframework</groupId>
@@ -143,13 +146,19 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-tracing-opentelemetry</artifactId>
+                <artifactId>axon-test</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-test</artifactId>
+                <artifactId>axon-tracing-opentelemetry</artifactId>
                 <version>${axon.version}</version>
+            </dependency>
+            <!-- Extension - Spring-Native -->
+            <dependency>
+                <groupId>org.axonframework.experimental</groupId>
+                <artifactId>axon-spring-native</artifactId>
+                <version>${extension.spring-native.version}</version>
             </dependency>
             <!-- Extension - AMQP -->
             <dependency>
@@ -216,6 +225,22 @@
                 <groupId>org.axonframework.extensions.mongo</groupId>
                 <artifactId>axon-mongo</artifactId>
                 <version>${extension.mongo.version}</version>
+            </dependency>
+            <!-- Extension - Multi-Tenancy -->
+            <dependency>
+                <groupId>org.axonframework.extensions.multitenancy</groupId>
+                <artifactId>axon-multitenancy</artifactId>
+                <version>${extension.multitenancy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.multitenancy</groupId>
+                <artifactId>multitenancy-spring-boot-autoconfigure</artifactId>
+                <version>${extension.multitenancy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.multitenancy</groupId>
+                <artifactId>multitenancy-spring-boot-starter</artifactId>
+                <version>${extension.multitenancy.version}</version>
             </dependency>
             <!-- Extension - Reactor -->
             <dependency>
