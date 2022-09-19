@@ -49,11 +49,10 @@
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
         <extension.jgroups.version>4.6.0</extension.jgroups.version>
         <extension.kafka.version>4.6.0</extension.kafka.version>
-        <extension.kotlin.version>0.2.0</extension.kotlin.version>
-
+        <extension.kotlin.version>4.6.0</extension.kotlin.version>
         <extension.mongo.version>4.6.0</extension.mongo.version>
         <extension.multitenancy.version>4.6.0</extension.multitenancy.version>
-        <extension.reactor.version>4.5.1</extension.reactor.version>
+        <extension.reactor.version>4.6.0</extension.reactor.version>
         <extension.spring-native.version>0.1.0</extension.spring-native.version>
         <extension.springcloud.version>4.6.0</extension.springcloud.version>
         <extension.tracing.version>4.6.0</extension.tracing.version>
