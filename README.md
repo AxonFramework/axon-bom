@@ -14,11 +14,15 @@ At this stage, the BOM includes the dependencies for the following projects:
 * [Axon Framework Kafka Extension](https://github.com/AxonFramework/extension-kafka)
 * [Axon Framework Kotlin Extension](https://github.com/AxonFramework/extension-kotlin)
 * [Axon Framework Mongo Extension](https://github.com/AxonFramework/extension-mongo)
+* [Axon Framework Multi-Tenancy Extension](https://github.com/AxonFramework/extension-multitenancy)
 * [Axon Framework Reactor Extension](https://github.com/AxonFramework/extension-reactor)
+* [Axon Framework Spring-Native Extension](https://github.com/AxonFramework/extension-spring-native)
 * [Axon Framework Spring Cloud Extension](https://github.com/AxonFramework/extension-springcloud)
 * [Axon Framework Tracing Extension](https://github.com/AxonFramework/extension-tracing)
 
-The Bill of Materials always follows at least the Axon Framework release cycle. So every new Axon Framework version will lead to a new Bill of Materials version. Releases of other dependencies may or may not lead to a new release.
+The Bill of Materials always follows at least the Axon Framework release cycle. 
+So every new Axon Framework version will lead to a new Bill of Materials version. 
+Releases of other dependencies may or may not lead to a new release.
 
 ## Getting Started - Maven
 
