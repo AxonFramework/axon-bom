@@ -13,8 +13,9 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>org.axonframework</groupId>
     <artifactId>axon-bom</artifactId>
@@ -62,8 +63,6 @@
 
     <dependencyManagement>
         <dependencies>
-        
-
             <!-- Axon Server Connector -->
             <dependency>
                 <groupId>io.axoniq</groupId>
@@ -76,12 +75,7 @@
                 <artifactId>axonserver-plugin-api</artifactId>
                 <version>${axonserver-plugin-api.version}</version>
             </dependency>
-            <!-- Project reactor - Included to avoid compatability issues when updating from older Axon versions -->
-            <dependency>
-                <groupId>io.projectreactor</groupId>
-                <artifactId>reactor-core</artifactId>
-                <version>${projectreactor.version}</version>
-            </dependency>
+
             <!-- Axon Framework -->
             <dependency>
                 <groupId>org.axonframework</groupId>
@@ -145,12 +139,12 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-tracing-opentelemetry</artifactId>
+                <artifactId>axon-test</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-test</artifactId>
+                <artifactId>axon-tracing-opentelemetry</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <!-- Extension - AMQP -->
@@ -227,12 +221,12 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework.extensions.multitenancy</groupId>
-                <artifactId>axon-multitenancy-spring-boot-autoconfigure</artifactId>
+                <artifactId>multitenancy-spring-boot-autoconfigure</artifactId>
                 <version>${extension.multitenancy.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.axonframework.extensions.multitenancy</groupId>
-                <artifactId>axon-multitenancy-spring-boot-starter</artifactId>
+                <artifactId>multitenancy-spring-boot-starter</artifactId>
                 <version>${extension.multitenancy.version}</version>
             </dependency>
             <!-- Extension - Reactor -->
@@ -288,6 +282,13 @@
                 <groupId>org.axonframework.extensions.tracing</groupId>
                 <artifactId>axon-tracing-spring-boot-starter</artifactId>
                 <version>${extension.tracing.version}</version>
+            </dependency>
+
+            <!-- Project Reactor - Included to avoid compatability issues when updating from older Axon versions -->
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>${projectreactor.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
