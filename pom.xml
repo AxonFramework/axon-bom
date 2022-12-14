@@ -57,7 +57,7 @@
         <extension.springcloud.version>4.6.0</extension.springcloud.version>
         <extension.tracing.version>4.6.1</extension.tracing.version>
 
-        <projectreactor.version>3.5.0</projectreactor.version>
+        <projectreactor.version>3.5.1</projectreactor.version>
     </properties>
 
     <dependencyManagement>
