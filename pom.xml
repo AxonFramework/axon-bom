@@ -91,11 +91,6 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-configuration-jakarta</artifactId>
-                <version>${axon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.axonframework</groupId>
                 <artifactId>axon-disruptor</artifactId>
                 <version>${axon.version}</version>
             </dependency>
@@ -106,22 +101,12 @@
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
-                <artifactId>axon-eventsourcing-jakarta</artifactId>
-                <version>${axon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.axonframework</groupId>
                 <artifactId>axon-legacy</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-messaging</artifactId>
-                <version>${axon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.axonframework</groupId>
-                <artifactId>axon-messaging-jakarta</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <dependency>
@@ -137,11 +122,6 @@
             <dependency>
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-modelling</artifactId>
-                <version>${axon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.axonframework</groupId>
-                <artifactId>axon-modelling-jakarta</artifactId>
                 <version>${axon.version}</version>
             </dependency>
             <dependency>
