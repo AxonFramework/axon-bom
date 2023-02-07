@@ -62,7 +62,7 @@
 
     <dependencyManagement>
         <dependencies>
-        
+
             <!-- Axon Server Connector -->
             <dependency>
                 <groupId>io.axoniq</groupId>
@@ -224,6 +224,21 @@
             <dependency>
                 <groupId>org.axonframework.extensions.mongo</groupId>
                 <artifactId>axon-mongo</artifactId>
+                <version>${extension.mongo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.mongo</groupId>
+                <artifactId>axon-mongo-spring</artifactId>
+                <version>${extension.mongo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.mongo</groupId>
+                <artifactId>axon-mongo-spring-boot-autoconfigure</artifactId>
+                <version>${extension.mongo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.mongo</groupId>
+                <artifactId>axon-mongo-spring-boot-starter</artifactId>
                 <version>${extension.mongo.version}</version>
             </dependency>
             <!-- Extension - Multi-Tenancy -->
