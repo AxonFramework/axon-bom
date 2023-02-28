@@ -42,7 +42,7 @@
 
     <properties>
         <axonserver-connector-java.version>4.6.2</axonserver-connector-java.version>
-        <axon.version>4.7.1</axon.version>
+        <axon.version>4.7.2</axon.version>
         <axonserver-plugin-api.version>4.6.0</axonserver-plugin-api.version>
 
         <extension.amqp.version>4.7.1</extension.amqp.version>
