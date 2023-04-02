@@ -220,6 +220,11 @@
                 <artifactId>axon-kotlin</artifactId>
                 <version>${extension.kotlin.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.kotlin</groupId>
+                <artifactId>axon-kotlin-test</artifactId>
+                <version>${extension.kotlin.version}</version>
+            </dependency>
             <!-- Extension - Mongo -->
             <dependency>
                 <groupId>org.axonframework.extensions.mongo</groupId>
