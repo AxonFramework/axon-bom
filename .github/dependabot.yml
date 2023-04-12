@@ -8,7 +8,6 @@ updates:
   labels:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
-    - "Status: In Progress"
   milestone: 26
   reviewers:
     - "smcvb" # Main
@@ -21,8 +20,8 @@ updates:
   labels:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
-    - "Status: In Progress"
   milestone: 26
   reviewers:
+    - "gklijs"
+    - "Morlack"
     - "smcvb" # Main
-    - "azzazzel"
