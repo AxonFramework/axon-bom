@@ -348,9 +348,10 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mavenExecutorId>forked-path</mavenExecutorId>
                     <localCheckout>true</localCheckout>
+                    <mavenExecutorId>forked-path</mavenExecutorId>
                     <pushChanges>false</pushChanges>
+                    <releaseProfiles>release-sign-artifacts</releaseProfiles>
                 </configuration>
             </plugin>
 
@@ -379,12 +380,6 @@
     <profiles>
         <profile>
             <id>release-sign-artifacts</id>
-            <activation>
-                <property>
-                    <name>performRelease</name>
-                    <value>true</value>
-                </property>
-            </activation>
             <build>
                 <plugins>
                     <plugin>
