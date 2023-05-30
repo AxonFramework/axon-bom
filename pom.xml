@@ -48,6 +48,7 @@
         <extension.amqp.version>4.7.1</extension.amqp.version>
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
         <extension.jgroups.version>4.7.0</extension.jgroups.version>
+        <extension.jobrunrpro.version>4.8.0</extension.jobrunrpro.version>
         <extension.kafka.version>4.7.0</extension.kafka.version>
         <extension.kotlin.version>4.7.0</extension.kotlin.version>
         <extension.mongo.version>4.7.0</extension.mongo.version>
@@ -197,6 +198,22 @@
                 <groupId>org.axonframework.extensions.jgroups</groupId>
                 <artifactId>axon-jgroups-spring-boot-starter</artifactId>
                 <version>${extension.jgroups.version}</version>
+            </dependency>
+            <!-- Extension - JobRunr Pro -->
+            <dependency>
+                <groupId>org.axonframework.extensions.jobrunrpro</groupId>
+                <artifactId>axon-jobrunrpro</artifactId>
+                <version>${extension.jobrunrpro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.jobrunrpro</groupId>
+                <artifactId>axon-jobrunrpro-spring-boot-autoconfigure</artifactId>
+                <version>${extension.jobrunrpro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.axonframework.extensions.jobrunrpro</groupId>
+                <artifactId>axon-jobrunrpro-spring-boot-starter</artifactId>
+                <version>${extension.jobrunrpro.version}</version>
             </dependency>
             <!-- Extension - Kafka -->
             <dependency>
