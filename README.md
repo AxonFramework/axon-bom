@@ -11,6 +11,7 @@ At this stage, the BOM includes the dependencies for the following projects:
 * [Axon Framework AMQP Extension](https://github.com/AxonFramework/extension-amqp)
 * [Axon Framework CDI Extension](https://github.com/AxonFramework/extension-cdi)
 * [Axon Framework JGroups Extension](https://github.com/AxonFramework/extension-jgroups)
+* [Axon Framework JobRunr Pro Extension](https://github.com/AxonFramework/extension-jobrunrpro)
 * [Axon Framework Kafka Extension](https://github.com/AxonFramework/extension-kafka)
 * [Axon Framework Kotlin Extension](https://github.com/AxonFramework/extension-kotlin)
 * [Axon Framework Mongo Extension](https://github.com/AxonFramework/extension-mongo)
