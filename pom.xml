@@ -59,6 +59,13 @@
         <extension.tracing.version>4.7.0</extension.tracing.version>
 
         <projectreactor.version>3.5.7</projectreactor.version>
+
+        <bom-helper.version>0.4.0</bom-helper.version>
+        <maven-clean.version>3.3.1</maven-clean.version>
+        <maven-deploy.version>3.1.1</maven-deploy.version>
+        <maven-gpg.version>3.1.0</maven-gpg.version>
+        <maven-install.version>3.1.1</maven-install.version>
+        <maven-release.version>3.0.1</maven-release.version>
     </properties>
 
     <dependencyManagement>
@@ -347,35 +354,21 @@
             <plugins>
                 <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>${maven-clean.version}</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>${maven-install.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
 
         <plugins>
-            <plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.1.1</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>3.0.1</version>
-                <configuration>
-                    <localCheckout>true</localCheckout>
-                    <mavenExecutorId>forked-path</mavenExecutorId>
-                    <pushChanges>false</pushChanges>
-                    <releaseProfiles>release-sign-artifacts</releaseProfiles>
-                </configuration>
-            </plugin>
-
+            <!-- validate -->
             <plugin>
                 <groupId>com.commsen.maven</groupId>
                 <artifactId>bom-helper-maven-plugin</artifactId>
-                <version>0.4.0</version>
+                <version>${bom-helper.version}</version>
                 <executions>
                     <execution>
                         <id>default</id>
@@ -391,6 +384,22 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- deploy -->
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven-deploy.version}</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release.version}</version>
+                <configuration>
+                    <localCheckout>true</localCheckout>
+                    <mavenExecutorId>forked-path</mavenExecutorId>
+                    <pushChanges>false</pushChanges>
+                    <releaseProfiles>release-sign-artifacts</releaseProfiles>
+                    <tagNameFormat>axon-@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -402,7 +411,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.1.0</version>
+                        <version>${maven-gpg.version}</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -432,6 +441,7 @@
             <uniqueVersion>false</uniqueVersion>
         </repository>
     </distributionManagement>
+
     <scm>
         <connection>scm:git:git://github.com/AxonFramework/axon-bom.git</connection>
         <developerConnection>scm:git:git@github.com:AxonFramework/axon-bom.git</developerConnection>
@@ -455,7 +465,16 @@
             <organization>AxonIQ</organization>
             <organizationUrl>https://axoniq.io</organizationUrl>
             <roles>
-                <role>Committer</role>
+                <role>Lead Developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Gerard Klijs</name>
+            <email>gerard.klijs@axoniq.io</email>
+            <organization>AxonIQ</organization>
+            <organizationUrl>https://axoniq.io</organizationUrl>
+            <roles>
+                <role>Developer</role>
             </roles>
         </developer>
         <developer>
@@ -465,6 +484,15 @@
             <organizationUrl>https://axoniq.io</organizationUrl>
             <roles>
                 <role>Committer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Mitchell Herrijgers</name>
+            <email>mitchell.herrijgers@axoniq.io</email>
+            <organization>AxonIQ</organization>
+            <organizationUrl>https://axoniq.io</organizationUrl>
+            <roles>
+                <role>Developer</role>
             </roles>
         </developer>
     </developers>
