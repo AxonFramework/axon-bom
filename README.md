@@ -17,7 +17,7 @@ At this stage, the BOM includes the dependencies for the following projects:
 * [Axon Framework Mongo Extension](https://github.com/AxonFramework/extension-mongo)
 * [Axon Framework Multi-Tenancy Extension](https://github.com/AxonFramework/extension-multitenancy)
 * [Axon Framework Reactor Extension](https://github.com/AxonFramework/extension-reactor)
-* [Axon Framework Spring-Native Extension](https://github.com/AxonFramework/extension-spring-native)
+* [Axon Framework Spring Ahead of Time Extension](https://github.com/AxonFramework/extension-spring-aot)
 * [Axon Framework Spring Cloud Extension](https://github.com/AxonFramework/extension-springcloud)
 * [Axon Framework Tracing Extension](https://github.com/AxonFramework/extension-tracing)
 

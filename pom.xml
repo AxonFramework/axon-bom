@@ -54,7 +54,7 @@
         <extension.mongo.version>4.8.0</extension.mongo.version>
         <extension.multitenancy.version>4.8.0</extension.multitenancy.version>
         <extension.reactor.version>4.8.0</extension.reactor.version>
-        <extension.spring-native.version>0.1.0</extension.spring-native.version>
+        <extension.spring-aot.version>4.8.0</extension.spring-aot.version>
         <extension.springcloud.version>4.8.0</extension.springcloud.version>
         <extension.tracing.version>4.8.0</extension.tracing.version>
 
@@ -161,12 +161,6 @@
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-tracing-opentelemetry</artifactId>
                 <version>${axon.version}</version>
-            </dependency>
-            <!-- Extension - Spring-Native -->
-            <dependency>
-                <groupId>org.axonframework.experimental</groupId>
-                <artifactId>axon-spring-native</artifactId>
-                <version>${extension.spring-native.version}</version>
             </dependency>
             <!-- Extension - AMQP -->
             <dependency>
@@ -301,6 +295,12 @@
                 <groupId>org.axonframework.extensions.reactor</groupId>
                 <artifactId>axon-reactor-spring-boot-starter</artifactId>
                 <version>${extension.reactor.version}</version>
+            </dependency>
+            <!-- Extension - Spring Ahead of Time -->
+            <dependency>
+                <groupId>org.axonframework.extensions.spring-aot</groupId>
+                <artifactId>axon-spring-aot</artifactId>
+                <version>${extension.spring-aot.version}</version>
             </dependency>
             <!-- Extension - Spring Cloud -->
             <dependency>
