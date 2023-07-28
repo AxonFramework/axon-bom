@@ -10,8 +10,10 @@ updates:
     - "Priority 1: Must"
   milestone: 30
   reviewers:
-    - "smcvb" # Main
     - "azzazzel"
+    - "CodeDrivenMitch"
+    - "gklijs"
+    - "smcvb"
 - package-ecosystem: maven
   directory: "/"
   schedule:
@@ -22,6 +24,7 @@ updates:
     - "Priority 1: Must"
   milestone: 30
   reviewers:
+    - "azzazzel"
+    - "CodeDrivenMitch"
     - "gklijs"
-    - "Morlack"
-    - "smcvb" # Main
+    - "smcvb"
