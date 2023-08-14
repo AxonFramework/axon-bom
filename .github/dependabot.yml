@@ -8,7 +8,7 @@ updates:
   labels:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
-  milestone: 31
+  milestone: 32
   reviewers:
     - "azzazzel"
     - "CodeDrivenMitch"
@@ -22,7 +22,7 @@ updates:
   labels:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
-  milestone: 31
+  milestone: 32
   reviewers:
     - "azzazzel"
     - "CodeDrivenMitch"
