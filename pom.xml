@@ -42,7 +42,7 @@
 
     <properties>
         <axonserver-connector-java.version>2023.1.1</axonserver-connector-java.version>
-        <axon.version>4.8.3</axon.version>
+        <axon.version>4.9.0</axon.version>
       
         <axonserver-plugin-api.version>4.6.0</axonserver-plugin-api.version>
 
