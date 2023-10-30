@@ -62,7 +62,7 @@
         <projectreactor.version>3.5.11</projectreactor.version>
 
         <bom-helper.version>0.4.0</bom-helper.version>
-        <maven-clean.version>3.3.1</maven-clean.version>
+        <maven-clean.version>3.3.2</maven-clean.version>
         <maven-deploy.version>3.1.1</maven-deploy.version>
         <maven-gpg.version>3.1.0</maven-gpg.version>
         <maven-install.version>3.1.1</maven-install.version>
