@@ -53,7 +53,7 @@
         <extension.kafka.version>4.9.0</extension.kafka.version>
         <extension.kotlin.version>4.9.0</extension.kotlin.version>
         <extension.mongo.version>4.9.0</extension.mongo.version>
-        <extension.multitenancy.version>4.9.1</extension.multitenancy.version>
+        <extension.multitenancy.version>4.9.2</extension.multitenancy.version>
         <extension.reactor.version>4.9.0</extension.reactor.version>
         <extension.spring-aot.version>4.9.0</extension.spring-aot.version>
         <extension.springcloud.version>4.9.1</extension.springcloud.version>
