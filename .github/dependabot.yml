@@ -3,28 +3,37 @@ updates:
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
-    interval: daily
+    interval: weekly
+    day: "sunday"
   open-pull-requests-limit: 5
   labels:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
   milestone: 36
   reviewers:
-    - "azzazzel"
-    - "CodeDrivenMitch"
-    - "gklijs"
-    - "smcvb"
+    - "AxonFramework/framework-developers"
+  groups:
+    github-dependencies:
+      update-types:
+        - "patch"
+        - "minor"
+        - "major"
+
 - package-ecosystem: maven
   directory: "/"
   schedule:
-    interval: daily
+    interval: weekly
+    day: "sunday"
   open-pull-requests-limit: 5
   labels:
     - "Type: Dependency Upgrade"
     - "Priority 1: Must"
   milestone: 36
   reviewers:
-    - "azzazzel"
-    - "CodeDrivenMitch"
-    - "gklijs"
-    - "smcvb"
+    - "AxonFramework/framework-developers"
+  groups:
+    github-dependencies:
+      update-types:
+        - "patch"
+        - "minor"
+        - "major"
