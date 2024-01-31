@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2010-2023. Axon Framework
+  ~ Copyright (c) 2010-2024. Axon Framework
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@
 
     <properties>
         <axonserver-connector-java.version>2023.2.0</axonserver-connector-java.version>
-        <axon.version>4.9.1</axon.version>
+        <axon.version>4.9.2</axon.version>
       
         <axonserver-plugin-api.version>4.7.1</axonserver-plugin-api.version>
 
@@ -55,7 +55,7 @@
         <extension.mongo.version>4.9.0</extension.mongo.version>
         <extension.multitenancy.version>4.9.2</extension.multitenancy.version>
         <extension.reactor.version>4.9.0</extension.reactor.version>
-        <extension.spring-aot.version>4.9.0</extension.spring-aot.version>
+        <extension.spring-aot.version>4.9.1</extension.spring-aot.version>
         <extension.springcloud.version>4.9.1</extension.springcloud.version>
         <extension.tracing.version>4.9.0</extension.tracing.version>
 
