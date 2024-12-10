@@ -55,7 +55,7 @@
         <extension.mongo.version>4.10.0</extension.mongo.version>
         <extension.multitenancy.version>4.10.3</extension.multitenancy.version>
         <extension.reactor.version>4.10.0</extension.reactor.version>
-        <extension.spring-aot.version>4.10.0</extension.spring-aot.version>
+        <extension.spring-aot.version>4.10.1</extension.spring-aot.version>
         <extension.springcloud.version>4.10.0</extension.springcloud.version>
         <extension.tracing.version>4.10.0</extension.tracing.version>
 
