@@ -42,7 +42,7 @@
 
     <properties>
         <axonserver-connector-java.version>2024.1.1</axonserver-connector-java.version>
-        <axon.version>4.10.2</axon.version>
+        <axon.version>4.10.3</axon.version>
       
         <axonserver-plugin-api.version>4.8.1</axonserver-plugin-api.version>
 
@@ -53,9 +53,9 @@
         <extension.kafka.version>4.10.0</extension.kafka.version>
         <extension.kotlin.version>4.10.0</extension.kotlin.version>
         <extension.mongo.version>4.10.0</extension.mongo.version>
-        <extension.multitenancy.version>4.10.2</extension.multitenancy.version>
+        <extension.multitenancy.version>4.10.3</extension.multitenancy.version>
         <extension.reactor.version>4.10.0</extension.reactor.version>
-        <extension.spring-aot.version>4.10.0</extension.spring-aot.version>
+        <extension.spring-aot.version>4.10.1</extension.spring-aot.version>
         <extension.springcloud.version>4.10.0</extension.springcloud.version>
         <extension.tracing.version>4.10.0</extension.tracing.version>
 
