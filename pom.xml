@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2010-2024. Axon Framework
+  ~ Copyright (c) 2010-2025. Axon Framework
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@
     </issueManagement>
 
     <properties>
-        <axonserver-connector-java.version>2024.1.1</axonserver-connector-java.version>
+        <axonserver-connector-java.version>2024.2.2</axonserver-connector-java.version>
         <axon.version>4.10.3</axon.version>
       
         <axonserver-plugin-api.version>4.8.1</axonserver-plugin-api.version>
