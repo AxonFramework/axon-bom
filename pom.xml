@@ -41,7 +41,7 @@
     </issueManagement>
 
     <properties>
-        <axonserver-connector-java.version>2024.1.1</axonserver-connector-java.version>
+        <axonserver-connector-java.version>2024.2.2</axonserver-connector-java.version>
         <axon.version>4.11.0</axon.version>
       
         <axonserver-plugin-api.version>4.8.1</axonserver-plugin-api.version>
