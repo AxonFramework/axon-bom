@@ -59,13 +59,13 @@
         <extension.springcloud.version>4.11.0</extension.springcloud.version>
         <extension.tracing.version>4.11.0</extension.tracing.version>
 
-        <projectreactor.version>3.7.2</projectreactor.version>
+        <projectreactor.version>3.7.5</projectreactor.version>
 
         <bom-helper.version>0.4.0</bom-helper.version>
-        <maven-clean.version>3.4.0</maven-clean.version>
-        <maven-deploy.version>3.1.3</maven-deploy.version>
+        <maven-clean.version>3.4.1</maven-clean.version>
+        <maven-deploy.version>3.1.4</maven-deploy.version>
         <maven-gpg.version>3.2.7</maven-gpg.version>
-        <maven-install.version>3.1.3</maven-install.version>
+        <maven-install.version>3.1.4</maven-install.version>
         <maven-release.version>3.1.1</maven-release.version>
     </properties>
 
