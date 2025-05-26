@@ -470,21 +470,12 @@
             </roles>
         </developer>
         <developer>
-            <name>Gerard Klijs</name>
-            <email>gerard.klijs@axoniq.io</email>
+            <name>Mateusz Nowak</name>
+            <email>mateusz.nowak@axoniq.io</email>
             <organization>AxonIQ</organization>
             <organizationUrl>https://axoniq.io</organizationUrl>
             <roles>
                 <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Milen Dyankov</name>
-            <email>milen.dyankov@axoniq.io</email>
-            <organization>AxonIQ</organization>
-            <organizationUrl>https://axoniq.io</organizationUrl>
-            <roles>
-                <role>Committer</role>
             </roles>
         </developer>
         <developer>
