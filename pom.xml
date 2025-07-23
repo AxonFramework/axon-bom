@@ -41,10 +41,10 @@
     </issueManagement>
 
     <properties>
-        <axonserver-connector-java.version>2024.2.2</axonserver-connector-java.version>
+        <axonserver-connector-java.version>2025.1.1</axonserver-connector-java.version>
         <axon.version>4.11.3</axon.version>
       
-        <axonserver-plugin-api.version>4.8.1</axonserver-plugin-api.version>
+        <axonserver-plugin-api.version>4.10.0</axonserver-plugin-api.version>
 
         <extension.amqp.version>4.11.0</extension.amqp.version>
         <extension.cdi.version>4.5-alpha1</extension.cdi.version>
@@ -59,14 +59,14 @@
         <extension.springcloud.version>4.11.0</extension.springcloud.version>
         <extension.tracing.version>4.11.0</extension.tracing.version>
 
-        <projectreactor.version>3.7.2</projectreactor.version>
+        <projectreactor.version>3.7.8</projectreactor.version>
 
         <!-- Build / Plugin -->
-        <bom-helper.version>0.4.0</bom-helper.version>
-        <central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
-        <maven-clean.version>3.4.0</maven-clean.version>
-        <maven-gpg.version>3.2.7</maven-gpg.version>
-        <maven-install.version>3.1.3</maven-install.version>
+        <bom-helper.version>0.5.0</bom-helper.version>
+        <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
+        <maven-clean.version>3.5.0</maven-clean.version>
+        <maven-gpg.version>3.2.8</maven-gpg.version>
+        <maven-install.version>3.1.4</maven-install.version>
         <maven-release.version>3.1.1</maven-release.version>
     </properties>
 
